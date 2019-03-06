@@ -1,9 +1,9 @@
 package ru.spirina.t_automation.presentation;
 
+import ru.spirina.t_automation.model.DataFile;
+
 import java.util.Arrays;
 import java.util.List;
-
-import ru.spirina.t_automation.model.DataFile;
 
 public class UserDataContainer {
 
@@ -66,7 +66,7 @@ public class UserDataContainer {
         return streets;
     }
 
-    public void init() {
+    public void readFileParameters() {
         UserDataReader reader = new UserDataReader();
         manNames = reader.readStringParameters(DataFile.FILE_MAN_NAMES);
         womanNames = reader.readStringParameters(DataFile.FILE_WOMAN_NAMES);
