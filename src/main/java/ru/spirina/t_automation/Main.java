@@ -14,11 +14,12 @@ public class Main {
     private static final String FILE_USERS_PDF = "users.pdf";
     private static final int STUB_COUNT = ThreadLocalRandom.current().nextInt(1, 31);
 
+
     public static void main(String[] args) {
         ExcelFileCreator excelFileCreator = new ExcelFileCreator(FILE_USERS_TABLE);
         PdfFileCreator pdfFileCreator = new PdfFileCreator(FILE_USERS_PDF);
         UsersRepository repository = new UsersRepository();
-        List<User> users = repository.fetchUsers(STUB_COUNT);
+        List<User> users = repository.getUsers(STUB_COUNT);
         excelFileCreator.create(users);
         pdfFileCreator.create(users);
     }
