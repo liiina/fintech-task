@@ -11,4 +11,5 @@
   (ex. Excel spreadsheet created at: /Users/lina/fintech-task-master/target/users.xlsx
        Pdf document created at: /Users/lina/fintech-task-master/target/users.pdf)
   Если в процессе произойдёт ошибка - детальная информация о ней будет выведена в консоль.
-  P.S. итоговый файл перезаписывается после каждого запуска программы
+6. Итоговый файл перезаписывается после каждого запуска программы.
+7. Данные для подключения к БД изменяются в ru/spirina/t_automation/sql/SqlConfiguration.java
